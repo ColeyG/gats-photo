@@ -7,10 +7,8 @@ export default ({ data }) => {
 
   let images = [];
 
-  edges.forEach((image) => {
-    console.log(image.node.path);
-
-    images.push(<img src={require(`../../images/${image.node.path}`)} alt />);
+  edges.forEach((image, index) => {
+    images.push(<img key={index} className="p-2" src={require(`../../images/${image.node.path}`)} />);
   });
 
   return (
