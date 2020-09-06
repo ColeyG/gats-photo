@@ -8,12 +8,12 @@ export default ({ data }) => {
   let images = [];
 
   edges.forEach((image, index) => {
-    images.push(<img key={index} className="p-2" src={require(`../../images/${image.node.path}`)} />);
+    images.push(<img key={index} className="photo p-2 m-2 shadow-lg" src={require(`../../images/${image.node.path}`)} />);
   });
 
   return (
     <div className="wrapper">
-      <div className="images">
+      <div className="images flex flex-wrap justify-center sm:flex-col lg:flex-row items-center">
         {images}
       </div>
     </div>
