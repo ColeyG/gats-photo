@@ -15,7 +15,6 @@ export default ({ data }) => {
 
   return (
     <div className="wrapper">
-      <h1>hello</h1>
       <div className="images">
         {images}
       </div>
