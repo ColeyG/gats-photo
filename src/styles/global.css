@@ -5,10 +5,18 @@
 @import "tailwindcss/utilities";
 
 body {
-  background-color: #ececec;
+  @apply bg-black;
 }
 
 .photo {
-  max-width: 500px;
+  width: 100%;
+  height: 100%;
   background-color: white;
+  cursor: pointer;
+}
+
+.jumbo-box {
+  backdrop-filter: blur(10px);
+  margin-bottom: -100vh;
+  cursor: pointer;
 }
