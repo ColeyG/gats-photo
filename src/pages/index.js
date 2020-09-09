@@ -17,7 +17,6 @@ export default ({ data }) => {
     console.log(e.target.src);
     setJumboImageState(e.target.src);
 
-    // console.log('image clicked');
     setJumboState(!jumboState);
   };
 
